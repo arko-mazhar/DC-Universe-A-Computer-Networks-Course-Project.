@@ -1,0 +1,262 @@
+TAsk 1:
+star city:
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet0/0
+Router(config-if)#ip address 192.10.38.3 255.255.255.0
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/0/0
+Router(config-if)#ip address 192.10.39.133 255.255.255.252
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/1/1
+Router(config-if)#ip address 192.10.39.129 255.255.255.252
+Router(config-if)#no shutdown
+
+Metropolis city:
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet0/1
+Router(config-if)#ip address 192.10.36.3 255.255.254.0
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/0/0
+Router(config-if)#ip address 192.10.39.134 255.255.255.252
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/0/1
+Router(config-if)#ip address 192.10.39.137 255.255.255.252
+Router(config-if)#no shutdown
+
+Coast city:
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet0/1
+Router(config-if)#ip address 192.10.39.3 255.255.255.128
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/0/0
+Router(config-if)#ip address 192.10.39.153 255.255.255.252
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/0/1
+Router(config-if)#ip address 192.10.39.138 255.255.255.252
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/1/0
+Router(config-if)#ip address 192.10.39.150 255.255.255.252
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/1/1
+Router(config-if)#ip address 192.10.39.130 255.255.255.252
+Router(config-if)#no shutdown
+
+Gotham city:
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet0/1
+Router(config-if)#ip address 192.10.32.3 255.255.252.0
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/0/1
+Router(config-if)#ip address 192.10.39.145 255.255.255.252
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/1/0
+Router(config-if)#ip address 192.10.39.149 255.255.255.252
+Router(config-if)#no shutdown
+
+Amazonia city:
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet0/1
+Router(config-if)#ip address 192.10.24.3 255.255.248.0
+Router(config-if)#no shutdown
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/0/0
+Router(config-if)#ip address 192.10.39.141 255.255.255.252
+Router(config-if)#no shutdown
+
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/0/1
+Router(config-if)#ip address 192.10.39.146 255.255.255.252
+Router(config-if)#no shutdown
+
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/1/0
+Router(config-if)#ip address 192.10.39.154 255.255.255.252
+Router(config-if)#no shutdown
+
+Atlantis city:
+
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface FastEthernet0/1
+Router(config-if)#ip address 192.10.8.3 255.255.240.0
+Router(config-if)#no shutdown
+
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#interface s0/0/0
+Router(config-if)#ip address 192.10.39.142 255.255.255.252
+Router(config-if)#no shutdown
+
+Task 2:
+
+Router(config)#ip route 192.10.36.0 255.255.254.0 192.10.39.134
+Router(config)#ip route 192.10.38.0 255.255.255.0 192.10.39.133
+Router(config)#ip route 192.10.39.0 255.255.255.128 192.10.39.138
+Router(config)#ip route 192.10.36.0 255.255.254.0 192.10.39.137
+Router(config)#ip route 192.10.39.0 255.255.255.128 192.10.39.130
+Router(config)#ip route 192.10.38.0 255.255.255.0 192.10.39.129
+
+
+
+
+
+Task 3:
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#router rip
+Router(config-router)#version 2
+Router(config-router)#no auto-summary
+Router(config-router)#network 192.10.8.0
+Router(config-router)#network 192.10.39.140
+Router(config-router)#network 192.10.24.0
+Router(config-router)#do wr
+Building configuration...
+[OK]
+Router(config-router)#
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#router rip
+Router(config-router)#version 2
+Router(config-router)#no auto-summary
+Router(config-router)#network 192.10.8.0
+Router(config-router)#network 192.10.39.140
+Router(config-router)#network 192.10.24.0
+Router(config-router)#do wr
+Building configuration...
+[OK]
+Router(config-router)#
+
+
+Task 4:
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#
+Router(config)#ip route 192.10.36.0 255.255.254.0 192.10.39.150
+
+Router>enable
+Router#
+Router#configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Router(config)#
+Router(config)#ip route 192.10.32.0 255.255.252.0 192.10.39.138
+
+Router(config)#ip route 192.10.38.0 255.255.255.0 192.10.39.150
+
+Router(config)#ip route 192.10.32.0 255.255.252.0 192.10.39.130
+
+Router(config)#ip route 192.10.8.0 255.255.240.0 192.10.39.146
+
+Router(config)#ip route 192.10.32.0 255.255.252.0 192.10.39.141
+
+Task 5:
+
+Router(config)#interface Serial0/0/0
+Router(config-if)#ip address 192.10.39.153 255.255.255.252
+Router(config-if)#ip address 192.10.39.153 255.255.255.252
+Router(config-if)#ip address 192.10.39.153 255.255.255.252
+Router(config-if)#no shutdown
+
+Router(config)#interface Serial0/1/0
+Router(config-if)#ip address 192.10.39.154 255.255.255.252
+Router(config-if)#ip address 192.10.39.154 255.255.255.252
+Router(config-if)#no shutdown
+Router(config-if)#
+%LINK-5-CHANGED: Interface Serial0/1/0, changed state to up
+
+%LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0/1/0, changed state to up
+
+
+Task 7:
+
+ip route 0.0.0.0 0.0.0.0 se0/0/0
+ip route 0.0.0.0 0.0.0.0 se0/0/1
+ip route 0.0.0.0 0.0.0.0 se0/1/0
+ip route 0.0.0.0 0.0.0.0 se0/0/1
+ip route 0.0.0.0 0.0.0.0 se0/1/1
